@@ -1,5 +1,5 @@
-from payfect.api_resources.abstract import CreateableAPIResource
+from payfect.api_resources.abstract import CreatableAPIResource
 
 
-class PaymentLink(CreateableAPIResource):
+class PaymentLink(CreatableAPIResource):
     OBJECT_NAME = 'payment-link'

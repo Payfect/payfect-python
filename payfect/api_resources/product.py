@@ -1,5 +1,5 @@
-from payfect.api_resources.abstract import CreateableAPIResource
+from payfect.api_resources.abstract import CreatableAPIResource
 
 
-class Product(CreateableAPIResource):
+class Product(CreatableAPIResource):
     OBJECT_NAME = 'product'
