@@ -1,1 +1,1 @@
-from .createable_api_resource import CreatableAPIResource
+from .creatable_api_resource import CreatableAPIResource
