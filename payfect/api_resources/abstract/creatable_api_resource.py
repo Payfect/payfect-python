@@ -4,7 +4,7 @@ import requests
 from .api_resource import APIResource
 
 
-class CreateableAPIResource(APIResource):
+class CreatableAPIResource(APIResource):
     @classmethod
     def create(
         cls,

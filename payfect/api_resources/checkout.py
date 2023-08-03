@@ -1,5 +1,5 @@
-from payfect.api_resources.abstract import CreateableAPIResource
+from payfect.api_resources.abstract import CreatableAPIResource
 
 
-class Checkout(CreateableAPIResource):
+class Checkout(CreatableAPIResource):
     OBJECT_NAME = 'checkout'
