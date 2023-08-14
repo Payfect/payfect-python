@@ -1,7 +1,7 @@
 import payfect
 
-payfect.api_key = 'Y4yiR6Rl.1hLmslmMHvWW8SJscVvjxx4INsMmtcF1'  # livemode
-# payfect.api_key = 'W8RMk4t7.HtfJQ6UREs3Mc56vfpvStiBQQRIohsgq'  # testmode
+
+payfect.api_key = 'AFDwuHas.CsnrZGOsYLOShBybOaysKwcusmlXXMGF'
 
 
 PRODUCT_NAME = '儲值金'
@@ -11,8 +11,8 @@ PRODUCT_IMAGE_URL = 'https://yt3.ggpht.com/ytc/AKedOLQRT9ywEEg9eRoW3SwJ0onY4bjvG
 PRICE_CURRENCY = 'usdt'
 PRICE_UNIT_AMOUNT = '1000'
 
-SUCCESS_URL = "https://example.com/success"
-CANCEL_URL = "https://example.com/cancel",
+SUCCESS_URL = 'https://example.com/success'
+CANCEL_URL = 'https://example.com/cancel'
 
 
 # 建立新產品（僅第一次需要）
@@ -38,13 +38,13 @@ price_id = price_data['id']
 
 
 # 建立結帳
-order_id = "order_0001"
+order_id = 'order_0001'
 
 checkout = payfect.Checkout.create(
     client_reference_id=order_id,
     invoice_items=[{
-        "price": price_id,
-        "quantity": 1
+        'price': price_id,
+        'quantity': 1
     }],
     currency=PRICE_CURRENCY,
     payment_method_types=[

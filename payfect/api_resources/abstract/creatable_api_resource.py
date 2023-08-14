@@ -19,4 +19,9 @@ class CreatableAPIResource(APIResource):
             }
         )
 
+        try:
+            r.raise_for_status()
+        except requests.exceptions.HTTPError as e:
+            raise Exception(r.status_code, r.reason, r.json())
+
         return r.json()
